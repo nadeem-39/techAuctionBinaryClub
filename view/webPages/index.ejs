@@ -1,0 +1,46 @@
+<% layout('./boilerplate/boilerplate.ejs') %>
+<body>
+   <div class="info-container">
+    <!-- top three team status -->
+        <div class="leaderBoard cards border border-top-0 border-danger">
+          <div class="innerDiv bg-success bg-gradient text-light border border-light"> <%=firstTeamName%></div>
+          <div class="innerDiv bg-warning bg-gradient border border-dark"> <%=secondTeamName%></div>
+          <div class="innerDiv bg-primary bg-gradient text-light border border-light"><%=thirdTeamName%></div>
+        </div>
+
+        <!-- serch question -->
+
+        <div class="teamInfo cards border-end-0 border-danger">
+          <div class="pointsCheck bg-danger">
+            <h2>Search your Question</h2><br>
+          <form action="/public/question" method="post">
+            <input required style="border-radius: 10px;" class="p-2 w-75"type="text" placeholder="Enter Ques Id.." name="questionCode">
+            <button class="checkBtn btn btn-success w-75">Search</button>
+          </form>
+          </div>
+        </div>
+
+        <!-- check your details -->
+
+        <div class="pointsInfo cards border-bottom-0 border-danger">
+          <div class="pointsCheck bg-warning">
+            <h2>Team Details</h2><br>
+          <form action="/public/checkTeamDetails" method="post">
+            <input required style="border-radius: 10px;" class="p-2 w-75"type="text" placeholder="Enter Team Id.." name="teamCode">
+            <button class="checkBtn btn btn-danger w-75">Check</button>
+          </form>
+          </div>
+          
+        </div>
+      </div>
+      <div class="quesAnsField ">
+        <div class="quesImg" style="text-align: center;">
+          <img class="w-50 h-30 imgStyle"src="/images/<%=questionCode%>" alt="ques"></div>
+       <form action="/public/answerForm">
+        <div  style="text-align: center;">
+          <button class="btn btn-primary w-75 ">Answer</button>
+        </div>
+       </form>
+      </div>
+</body>
+

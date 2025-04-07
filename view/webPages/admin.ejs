@@ -1,0 +1,37 @@
+<% layout('./boilerplate/boilerplate.ejs') %>
+
+<body>
+    <div class="cards card-update" style="background-color:rgba(0, 131, 161, 0.586);">
+        <div class="formCards">
+            <h2>Update Points</h2>
+            <form action="/admin/updatePoints" method="post">
+                <input required class="ipBox" type="password" name="who" placeholder="who?">
+                <br>
+                <button class="btn btn-dark">Update points</button>
+            </form>
+        </div>
+        <div class="formCards">
+            <h2  >Create New Team</h2>
+            <form action="/admin/createTeamForm" method="post">
+                <input required class="ipBox" type="password" name="who" placeholder="who?">
+                <br>
+                <button class="btn btn-dark">Create team</button>
+            </form>
+        </div>
+        <div class="formCards" >
+            <h2  >Delete Team</h2>
+            <form action="/admin/deleteTeam?_method=delete" method="post" >
+                <input required class="ipBox m-1" type="password" name="who" placeholder="who?"> <br>
+                <input required class="ipBox" type="text" name="teamCode" placeholder="Enter team Code"> <br>
+                <button class="btn btn-dark mb-4 " >delete team</button>
+            </form>
+        </div>
+        <div class="formCards">
+            <h2  >Show All Teams</h2>
+            <form action="/admin/showAllTeam" method="post">
+                <input required class="ipBox" type="password" name="who" placeholder="who?"><br>
+                <button class="btn btn-dark">show all team</button>
+            </form>
+        </div>
+    </div>   
+</body>

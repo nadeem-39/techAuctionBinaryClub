@@ -1,0 +1,15 @@
+<% layout('./boilerplate/boilerplate.ejs') %>
+
+<body>
+    <div class="checkPoints">
+        <form style="width: 100%; text-align: center;" action="/public/answer?_method=put" method="post">
+            <input required style="width: 80%; border-radius: 10px;" type="text" name="teamCode" placeholder="team code">
+            <br><br>
+            <input required style="width: 80%; border-radius: 10px;" type="password" name="teamPass" placeholder="Team password">
+            <br><br>
+            <input required style="width: 80%; border-radius: 10px" type="text" name="answer" placeholder="Enter your Answer">
+            <br><br>
+            <button class="btn btn-primary" style="width: 80%;">Submit</button>
+        </form>
+    </div>
+</body>

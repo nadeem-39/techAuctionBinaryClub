@@ -1,0 +1,19 @@
+<% layout('./boilerplate/boilerplate.ejs') %>
+<body>
+    <div class="checkPoints">
+        <form style="width: 100%; text-align: center;" action="/admin/createTeam" method="post">
+            <input required style="width: 80%; border-radius: 10px;" type="text" name="who" id="" placeholder="who are u?">
+            <br> <br>
+            <input required style="width: 80%; border-radius: 10px;" type="number" name="userStatus[points]" placeholder="points">
+            <br> <br>
+            <input required style="width: 80%; border-radius: 10px;" type="text" name="userStatus[teamName]" placeholder="team name">
+            <br><br>
+            <input required style="width: 80%; border-radius: 10px;" type="text" name="userStatus[teamCode]" placeholder="teamCode">
+            <br><br>
+            <input required style="width: 80%; border-radius: 10px;" type="password" name="userStatus[teamPass]" placeholder="team password">
+            <br><br>
+            <button style="width: 80%;" class="btn btn-warning">Submit</button>
+        </form>
+    </div>
+    
+</body>

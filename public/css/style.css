@@ -1,0 +1,138 @@
+body{
+    /* background-color: #cbfff1; */
+   
+    background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zODAtMDcta255Z2FwNmouanBn.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Quicksand", sans-serif;
+    font-size: 30px;
+    /* background-color: rgba(14, 13, 13, 0.939); */
+}
+
+.info-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding : 2rem;
+    margin-top: 2rem;
+
+}
+
+.nav-self{
+    background-color: #1d3557;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid black;
+    height: 40vh;
+    width: 30vw;
+    padding: 1rem;
+    position: relative;
+    box-shadow: 0 14px 26px rgba(0,0,0,0.04);
+    transition: all 0.3s ease-out;
+    background: rgba(206, 194, 221, 0.792);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-width: 4px;
+}
+.innerDiv{
+    background-color: aliceblue;
+    margin: 0.5rem;
+    height : 40%;
+    width:75%;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    
+}
+.cards:hover{
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0,0,0,0.11),0 24px 46px  rgba(0, 45, 59, 0.852);
+}
+.pointsCheck{
+    background-color: aliceblue;
+    margin: 0.5rem;
+    margin-top: 0.2rem;
+    height : 90%;
+    width:95%;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.imgStyle{
+    border: 3px solid yellow;
+    border-radius: 30px;
+}
+.card-update{
+    display: flex;
+    height: 80vh;
+    width: 90vw;
+    text-align: center;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+.formCards{
+  
+    border: 2px solid black;
+    height: 30vh;
+    width: 35vw;
+    padding: 1rem;
+    position: relative;
+    box-shadow: 0 14px 26px rgba(0,0,0,0.04);
+    
+    transition: all 0.3s ease-out;
+    background: #cb9800;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-width: 4px;
+}
+.ipBox{
+    width: 90%;
+    height: 20%;
+}
+.ipUpdate{
+    height: 20%;
+    border-radius: 10px;
+    
+}
+.greenBg{
+    background-color: rgb(0, 67, 0);
+}
+.checkPoints{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 3rem;
+    height: 90vh;
+    width:70vw;
+    background-color: rgb(30, 77, 123);
+    border: 2px solid rgb(253, 253, 253);
+    justify-content:space-evenly;
+    gap:2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 30px;
+}
+.checkDiv{
+    width:70%;
+    height: 15%;
+    background-color: lightpink;
+    text-align: center;
+   padding-top: 1rem;
+   border: 3px solid black;
+   border-radius: 20px;
+}
