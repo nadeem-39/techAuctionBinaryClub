@@ -109,7 +109,7 @@ app.post('/public/question', asyncWrap(async(req, res)=>{
     }
 
 
-    let questionCode = "salt"+ req.body.questionCode+'.jpg';
+    let questionCode = "salt"+ req.body.questionCode+'.png';
     
 
     res.render("webPages/index.ejs",{firstTeamName, secondTeamName, thirdTeamName,questionCode, Teams})
