@@ -140,7 +140,8 @@ app.put('/public/answer', asyncWrap(async(req,res)=>{
 // check team details
 app.post('/public/checkTeamDetails', asyncWrap(async (req,res)=>{
     let currTeam = await UserStatus.findOne({teamCode:req.body.teamCode});
-    res.render('webPages/checkTeamDetail.ejs',{currTeam});
+    if(!currTeam)res.send("Enter valid team code");
+    else res.render('webPages/checkTeamDetail.ejs',{currTeam});
 }))
 
 
