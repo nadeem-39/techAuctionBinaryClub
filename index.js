@@ -186,7 +186,7 @@ app.patch('/admin/points', isAdmin, asyncWrap(async(req,res)=>{
         let teamCode = req.body.teamCode;
         let currTeamData = await UserStatus.findOne({teamCode:teamCode});
         currTeamData.points = currTeamData.points + Number(req.body.points);
-        currTeamData.noOfQuestion += 1;
+        currTeamData.noOfQuestion += Number(req.body.isQuestion);
         await UserStatus.findByIdAndUpdate(currTeamData.id,{...currTeamData});
         let updatedData = await UserStatus.findOne({teamCode:teamCode});
         res.redirect('/');
@@ -213,5 +213,5 @@ app.use((err,req,res,next)=>{
 
 
 app.listen(8000,()=>{
-    console.log('server started 8080');
+    console.log('server started 8000');
 })
